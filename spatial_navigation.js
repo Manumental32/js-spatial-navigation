@@ -4,7 +4,7 @@
  * Copyright (c) 2016 Luke Chang.
  * https://github.com/luke-chang/js-spatial-navigation
  *
- * Licensed under the MPL license.
+ * Licensed under the MPL 2.0.
  */
 ;(function($) {
   'use strict';
@@ -91,12 +91,12 @@
     var rect = {
         left: cr.left,
         top: cr.top,
+        right: cr.right,
+        bottom: cr.bottom,
         width: cr.width,
         height: cr.height
     };
     rect.element = elem;
-    rect.right = rect.left + rect.width;
-    rect.bottom = rect.top + rect.height;
     rect.center = {
       x: rect.left + Math.floor(rect.width / 2),
       y: rect.top + Math.floor(rect.height / 2)
